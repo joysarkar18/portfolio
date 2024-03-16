@@ -23,7 +23,12 @@ export default function Home() {
       <Profile></Profile>
       <About></About>
       <MySkills></MySkills>
-      <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-10"></div>
+      <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg mb-10 flex justify-center items-start p-10">
+        <div className="flex items-center gap-x-3 ml-2">
+          <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
+          <h4 className="text-2xl font-bold">My Projects</h4>
+        </div>
+      </div>
     </div>
   );
 }
