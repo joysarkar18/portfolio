@@ -6,6 +6,8 @@ import "@dotlottie/react-player/dist/index.css";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import MySkills from "./components/MySkills";
+import { RiFlutterFill } from "react-icons/ri";
+import { SiFirebase } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -23,10 +25,41 @@ export default function Home() {
       <Profile></Profile>
       <About></About>
       <MySkills></MySkills>
-      <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg mb-10 flex justify-center items-start p-10">
+      <div className="h-full w-[70vw] bg-[#212428] rounded-lg mb-10 flex flex-col justify-start items-center p-10">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">My Projects</h4>
+        </div>
+
+        <div className="grid grid-cols-3 gap-x-20 gap-y-28 mt-24">
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+            <div className="relative bottom-7 px-6">
+              <div className="text-slate-800 text-[12px]">
+                An app for creating Espots contests 🎮.
+              </div>
+              <div className="text-black font-semibold flex items-center text-[16px]">
+                Gamaru Mobile App
+                <RiFlutterFill color="#39A9F7" className="ml-2"></RiFlutterFill>
+                <SiFirebase color="#FAC734" className="ml-1"></SiFirebase>
+              </div>
+            </div>
+          </div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#D7EEFE]">
+            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+          </div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+          </div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+          </div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+          </div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+          </div>
         </div>
       </div>
     </div>
