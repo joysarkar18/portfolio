@@ -1,12 +1,10 @@
 "use client";
-
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { Inter } from "next/font/google";
-import { Controls, DotLottiePlayer } from "@dotlottie/react-player";
-import { MdCloudDownload } from "react-icons/md";
 import "@dotlottie/react-player/dist/index.css";
+import Profile from "./components/Profile";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -21,9 +19,18 @@ export default function Home() {
           Hire Me
         </p>
       </nav>
-      <Home></Home>
-      <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg"></div>
-      <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg"></div>
+      <Profile></Profile>
+      <About></About>
+
+      <div className="w-[70vw] flex justify-between mb-32">
+        <div className="h-[336px] w-[30.5vw] bg-[#212428] rounded-lg p-10"></div>
+        <div className="h-[336px] w-[37.5vw] bg-[#212428] rounded-lg p-10">
+          <div className="flex items-center gap-x-3 ml-2">
+            <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#23C7AC] to-[#a3f1ee] rounded-full"></div>
+            <h4 className="text-2xl font-bold">About My Skills</h4>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import { MdCloudDownload } from "react-icons/md";
 
-export default function Home() {
+export default function Profile() {
   return (
     <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-10">
       <div className="h-[60vh]">
