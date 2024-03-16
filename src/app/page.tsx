@@ -5,6 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import "@dotlottie/react-player/dist/index.css";
 import Profile from "./components/Profile";
 import About from "./components/About";
+import MySkills from "./components/MySkills";
 
 export default function Home() {
   return (
@@ -21,16 +22,8 @@ export default function Home() {
       </nav>
       <Profile></Profile>
       <About></About>
-
-      <div className="w-[70vw] flex justify-between mb-32">
-        <div className="h-[336px] w-[30.5vw] bg-[#212428] rounded-lg p-10"></div>
-        <div className="h-[336px] w-[37.5vw] bg-[#212428] rounded-lg p-10">
-          <div className="flex items-center gap-x-3 ml-2">
-            <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#23C7AC] to-[#a3f1ee] rounded-full"></div>
-            <h4 className="text-2xl font-bold">About My Skills</h4>
-          </div>
-        </div>
-      </div>
+      <MySkills></MySkills>
+      <div className="h-[80vh] w-[70vw] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-10"></div>
     </div>
   );
 }

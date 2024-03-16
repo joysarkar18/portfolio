@@ -9,7 +9,7 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 export default function About() {
   return (
     <div className="flex mb-10 flex-row justify-between w-[70vw]">
-      <div className="h-[336px] w-[39.5vw] bg-[#212428] rounded-lg p-10">
+      <div className="w-[39.5vw] bg-[#212428] rounded-lg p-10">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">About Me</h4>
@@ -26,7 +26,7 @@ export default function About() {
           I have one year plus of exprience with Flutter development.
         </div>
       </div>
-      <div className="h-[336px] w-[28.4vw] bg-[#212428] rounded-lg p-10">
+      <div className="h-full w-[28.4vw] bg-[#212428] rounded-lg p-10">
         <div className="flex items-center gap-x-3 mb-4">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">My Details</h4>
