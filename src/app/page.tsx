@@ -8,6 +8,7 @@ import About from "./components/About";
 import MySkills from "./components/MySkills";
 import { RiFlutterFill } from "react-icons/ri";
 import { SiFirebase } from "react-icons/si";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -33,32 +34,99 @@ export default function Home() {
 
         <div className="grid grid-cols-3 gap-x-20 gap-y-28 mt-24">
           <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
-            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
-            <div className="relative bottom-7 px-6">
-              <div className="text-slate-800 text-[12px]">
-                An app for creating Espots contests 🎮.
+            <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
+              <Image
+                src={"/images/podiumpe.png"}
+                alt=""
+                height={201}
+                width={290}
+                className="rounded-xl border border-gray-200"
+              ></Image>
+            </div>
+            <div className="relative bottom-5 px-6">
+              <div className="text-slate-800 text-[13px]">
+                India's first racing fantasy game.
               </div>
-              <div className="text-black font-semibold flex items-center text-[16px]">
-                Gamaru Mobile App
-                <RiFlutterFill color="#39A9F7" className="ml-2"></RiFlutterFill>
-                <SiFirebase color="#FAC734" className="ml-1"></SiFirebase>
+              <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+                Podiumpe mobile app
               </div>
             </div>
           </div>
-          <div className="h-[271px] w-[320px] rounded-2xl bg-[#D7EEFE]">
-            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
+              <Image
+                src={"/images/pregamate.png"}
+                alt=""
+                height={201}
+                width={290}
+                className="rounded-xl border border-gray-200"
+              ></Image>
+            </div>
+            <div className="relative bottom-5 px-6">
+              <div className="text-slate-800 text-[13px]">
+                Pregnancy care app for indian women.
+              </div>
+              <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+                Pregamate mobile app
+              </div>
+            </div>
           </div>
           <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
-            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+            <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
+              <Image
+                src={"/images/gamaru.png"}
+                alt=""
+                height={201}
+                width={290}
+                className="rounded-xl border border-gray-200"
+              ></Image>
+            </div>
+            <div className="relative bottom-5 px-6">
+              <div className="text-slate-800 text-[13px]">
+                An app for creating Esports contests.
+              </div>
+              <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+                Gamaru mobile app
+              </div>
+            </div>
           </div>
           <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
-            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+            <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
+              <Image
+                src={"/images/glossy.png"}
+                alt=""
+                height={201}
+                width={290}
+                className="rounded-xl border border-gray-200"
+              ></Image>
+            </div>
+            <div className="relative bottom-5 px-6">
+              <div className="text-slate-800 text-[13px]">
+                A flutter package for glassmorphic effect.
+              </div>
+              <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+                Flutter package Glossy
+              </div>
+            </div>
           </div>
           <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
-            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
-          </div>
-          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
-            <div className="relative top-[-50px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]"></div>
+            <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
+              <Image
+                src={"/images/podiumpe.png"}
+                alt=""
+                height={201}
+                width={290}
+                className="rounded-xl border border-gray-200"
+              ></Image>
+            </div>
+            <div className="relative bottom-5 px-6">
+              <div className="text-slate-800 text-[13px]">
+                India's first racing fantasy game.
+              </div>
+              <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+                Podiumpe mobile app
+              </div>
+            </div>
           </div>
         </div>
       </div>
