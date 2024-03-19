@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="relative bottom-5 px-6">
               <div className="text-slate-800 text-[13px]">
-                India's first racing fantasy game.
+                {`India's first racing fantasy game.`}
               </div>
               <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
                 Podiumpe mobile app
