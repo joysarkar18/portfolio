@@ -112,7 +112,7 @@ export default function Home() {
           <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
             <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
               <Image
-                src={"/images/podiumpe.png"}
+                src={"/images/hackaut.png"}
                 alt=""
                 height={201}
                 width={290}
@@ -121,10 +121,29 @@ export default function Home() {
             </div>
             <div className="relative bottom-5 px-6">
               <div className="text-slate-800 text-[13px]">
-                India's first racing fantasy game.
+                Official website for coding club MAKAUT.
               </div>
               <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
-                Podiumpe mobile app
+                Hackaut official website
+              </div>
+            </div>
+          </div>
+          <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF]">
+            <div className="relative top-[-74px] left-[15px] h-[241px] w-[290px] rounded-2xl bg-[#946dbb]">
+              <Image
+                src={"/images/transacton.png"}
+                alt=""
+                height={201}
+                width={290}
+                className="rounded-xl border border-gray-200"
+              ></Image>
+            </div>
+            <div className="relative bottom-5 px-6">
+              <div className="text-slate-800 text-[13px]">
+                Official website for coding club MAKAUT.
+              </div>
+              <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+                Hackaut official website
               </div>
             </div>
           </div>
