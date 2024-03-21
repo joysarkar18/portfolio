@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <div className="h-full w-[70vw] bg-[#212428] rounded-lg mb-10 flex flex-col justify-start items-center p-10">
+    <div className="h-full w-[1400px] bg-[#212428] rounded-lg mb-10 flex flex-col justify-start items-center p-10">
       <div className="flex items-center gap-x-3 ml-2">
         <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
         <h4 className="text-2xl font-bold">My Projects</h4>

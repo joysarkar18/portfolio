@@ -3,11 +3,11 @@ import Skill from "./Skill";
 
 export default function MySkills() {
   return (
-    <div className="w-[70vw] flex justify-between mb-10">
-      <div className="w-[27.5vw] bg-[#212428] rounded-lg py-6 px-6">
+    <div className="w-[1400px] flex justify-between mb-10">
+      <div className="w-[500px] bg-[#212428] rounded-lg py-6 px-6">
         <Spline scene="https://prod.spline.design/jKkr0egSW0vOYf8e/scene.splinecode" />
       </div>
-      <div className="w-[40.5vw] bg-[#212428] rounded-lg p-10">
+      <div className="w-[860px] bg-[#212428] rounded-lg p-10">
         <div className="flex items-center gap-x-3 mb-1">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#23C7AC] to-[#a3f1ee] rounded-full"></div>
           <h4 className="text-2xl font-bold">About My Skills</h4>
