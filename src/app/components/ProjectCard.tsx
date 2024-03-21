@@ -1,0 +1,66 @@
+import { RiFlutterFill } from "react-icons/ri";
+import { SiFirebase } from "react-icons/si";
+import Image from "next/image";
+import { FaIcons } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { BsBrowserEdge } from "react-icons/bs";
+import { FaGooglePlay } from "react-icons/fa";
+type projectsProp = {
+  projectName: string;
+  desc: string;
+  img: string;
+  inPlayStore: boolean;
+  link: string;
+  source: string;
+  playStoreLink: string;
+};
+export default function ProjectCard({
+  projectName,
+  desc,
+  img,
+  inPlayStore,
+  link,
+  source,
+  playStoreLink,
+}: projectsProp) {
+  return (
+    <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF] group">
+      <div className="relative top-[-74px] left-[15px] h-[290px] w-[290px] rounded-2xl bg-[#946dbb] overflow-hidden">
+        <Image
+          src={img}
+          alt=""
+          height={201}
+          width={290}
+          className="rounded-xl border border-gray-200 transition duration-500 ease-in-out group-hover:filter group-hover:blur-md"
+        />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out gap-8">
+          <BsBrowserEdge
+            color="#FA6006"
+            size={30}
+            className="cursor-pointer"
+          ></BsBrowserEdge>
+          {!inPlayStore && (
+            <FaGithub
+              color="#FA6006"
+              size={30}
+              className="cursor-pointer"
+            ></FaGithub>
+          )}
+          {inPlayStore && (
+            <FaGooglePlay
+              color="#FA6006"
+              size={30}
+              className="cursor-pointer"
+            ></FaGooglePlay>
+          )}
+        </div>
+      </div>
+      <div className="relative bottom-[68px] px-6">
+        <div className="text-slate-800 text-[13px]">{desc}</div>
+        <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
+          {projectName}
+        </div>
+      </div>
+    </div>
+  );
+}
