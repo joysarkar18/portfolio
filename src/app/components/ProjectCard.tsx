@@ -13,6 +13,7 @@ type projectsProp = {
   link: string;
   source: string;
   playStoreLink: string;
+  inGithub: boolean;
 };
 export default function ProjectCard({
   projectName,
@@ -22,6 +23,7 @@ export default function ProjectCard({
   link,
   source,
   playStoreLink,
+  inGithub,
 }: projectsProp) {
   return (
     <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF] group">
@@ -34,24 +36,31 @@ export default function ProjectCard({
           className="rounded-xl border border-gray-200 transition duration-500 ease-in-out group-hover:filter group-hover:blur-md"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out gap-8">
-          <BsBrowserEdge
-            color="#FA6006"
-            size={30}
-            className="cursor-pointer"
-          ></BsBrowserEdge>
-          {!inPlayStore && (
-            <FaGithub
+          <a href={link} target="_blank">
+            <BsBrowserEdge
               color="#FA6006"
               size={30}
               className="cursor-pointer"
-            ></FaGithub>
+            ></BsBrowserEdge>
+          </a>
+          {inGithub && (
+            <a href={source} target="_blank">
+              {" "}
+              <FaGithub
+                color="#FA6006"
+                size={30}
+                className="cursor-pointer"
+              ></FaGithub>
+            </a>
           )}
           {inPlayStore && (
-            <FaGooglePlay
-              color="#FA6006"
-              size={30}
-              className="cursor-pointer"
-            ></FaGooglePlay>
+            <a href={playStoreLink} target="_blank">
+              <FaGooglePlay
+                color="#FA6006"
+                size={30}
+                className="cursor-pointer"
+              ></FaGooglePlay>
+            </a>
           )}
         </div>
       </div>

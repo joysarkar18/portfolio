@@ -1,14 +1,13 @@
 "use client";
-import { FaIcons, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import "@dotlottie/react-player/dist/index.css";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import MySkills from "./components/MySkills";
-import Image from "next/image";
-import ProjectCard from "./components/ProjectCard";
 import Projects from "./components/Projects";
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -27,6 +26,14 @@ export default function Home() {
       <About></About>
       <MySkills></MySkills>
       <Projects></Projects>
+      <div className="h-full w-[70vw] bg-[#212428] rounded-lg mb-20 flex flex-col justify-start items-center p-10">
+        <div className="flex items-center gap-x-3 ml-2">
+          <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
+          <h4 className="text-2xl font-bold">Contact with Me</h4>
+        </div>
+
+        <ContactForm></ContactForm>
+      </div>
     </div>
   );
 }

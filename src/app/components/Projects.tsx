@@ -8,15 +8,16 @@ export default function Projects() {
         <h4 className="text-2xl font-bold">My Projects</h4>
       </div>
 
-      <div className="grid grid-cols-3 gap-x-20 gap-y-28 mt-24">
+      <div className="grid grid-cols-3 gap-x-20 gap-y-28 mt-28">
         <ProjectCard
           desc={`India's first racing fantasy game.`}
           img="/images/podiumpe.png"
           projectName="Podiumpe mobile app"
           inPlayStore={false}
-          link="aajdhjkasdh"
-          playStoreLink="afjdakjdkalsd"
-          source="safjkkfsljsdklfj"
+          link="https://www.podiumpe.com/"
+          playStoreLink=""
+          source=""
+          inGithub={false}
         ></ProjectCard>
 
         <ProjectCard
@@ -24,9 +25,10 @@ export default function Projects() {
           img="/images/pregamate.png"
           projectName="Pregamate mobile app"
           inPlayStore={true}
-          link=""
-          playStoreLink=""
+          link="https://pregamate.com/"
+          playStoreLink="https://play.google.com/store/apps/details?id=com.pregamate.mobile_application"
           source=""
+          inGithub={false}
         ></ProjectCard>
 
         <ProjectCard
@@ -34,18 +36,20 @@ export default function Projects() {
           img="/images/gamaru.png"
           projectName="Gamaru mobile app"
           inPlayStore={false}
-          link=""
+          link="https://gamaru.online/"
           playStoreLink=""
-          source=""
+          source="https://github.com/joysarkar18/gamaru-mobile-app"
+          inGithub={true}
         ></ProjectCard>
         <ProjectCard
           desc="Flutter package for glassmorphism effect."
           img="/images/glossy.png"
           projectName="Flutter package glossy"
           inPlayStore={false}
-          link=""
+          link="https://pub.dev/packages/glossy"
           playStoreLink=""
-          source=""
+          source="https://github.com/joysarkar18/glossy"
+          inGithub={true}
         ></ProjectCard>
 
         <ProjectCard
@@ -53,18 +57,20 @@ export default function Projects() {
           img="/images/hackaut.png"
           projectName="Hackaut official website"
           inPlayStore={false}
-          link=""
+          link="https://hackaut.netlify.app/"
           playStoreLink=""
-          source=""
+          source="https://github.com/joysarkar18/Hackaut-web"
+          inGithub={true}
         ></ProjectCard>
         <ProjectCard
-          desc="Official website for coding club MAKAUT."
+          desc="Just a hobby app for tracking my expenses"
           img="/images/transacton.png"
-          projectName="Hackaut official website"
+          projectName="Expanse Tracker App"
           inPlayStore={false}
-          link=""
+          link="https://github.com/joysarkar18/Expense-Tracker-app"
           playStoreLink=""
-          source=""
+          source="https://github.com/joysarkar18/Expense-Tracker-app"
+          inGithub={true}
         ></ProjectCard>
       </div>
     </div>
