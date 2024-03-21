@@ -64,7 +64,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="flex font-bold items-center gap-2 text-sm text-white">
               21
             </div>

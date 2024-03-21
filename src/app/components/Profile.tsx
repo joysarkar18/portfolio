@@ -12,7 +12,7 @@ export default function Profile() {
         ></DotLottiePlayer>
       </div>
 
-      <div className="h-[60vh] flex flex-col justify-center ml-20">
+      <div className="h-[580px] flex flex-col justify-center ml-20">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">HELLO, MY NAME IS</h4>
@@ -27,7 +27,7 @@ export default function Profile() {
           <div className="h-[17px] w-[54px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">I AM A SOFTWARE DEVELOPER</h4>
         </div>
-        <div className="text-lg mt-8 w-[32vw] ml-1">
+        <div className="text-lg mt-8 w-[560px] ml-1">
           From Kolkata, West Bengal. I have rich exprience in Mobile app
           development, also I am good at Fullstack web development. I love to
           talk with about our unique.
