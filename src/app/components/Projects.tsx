@@ -5,7 +5,7 @@ export default function Projects() {
     <div className="h-full w-[92vw] sm:w-[90vw]  lg:w-[1200px] 2xl:w-[1400px] bg-[#212428] rounded-lg mb-10 flex flex-col justify-start items-center p-8 sm:p-10">
       <div className="flex items-center gap-x-3 ml-2">
         <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
-        <h4 className="text-2xl font-bold">My Projects</h4>
+        <h4 className="text-2xl font-bold text-white">My Projects</h4>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 lg:gap-x-16 2xl:gap-x-20 gap-y-28 mt-28">

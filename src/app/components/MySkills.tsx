@@ -10,9 +10,9 @@ export default function MySkills() {
       <div className="w-[92vw] sm:w-[90vw] lg:w-[720px] 2xl:w-[860px] bg-[#212428] rounded-lg p-8 sm:lg:p-8 2xl:p-10">
         <div className="flex items-center gap-x-3 mb-1">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#23C7AC] to-[#a3f1ee] rounded-full"></div>
-          <h4 className="text-2xl font-bold">About My Skills</h4>
+          <h4 className="text-2xl font-bold text-white">About My Skills</h4>
         </div>
-        <div className="flex flex-wrap gap-x-8 gap-y-2">
+        <div className="flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2">
           <Skill
             height={58}
             width={58}

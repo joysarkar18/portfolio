@@ -12,9 +12,9 @@ export default function About() {
       <div className="w-[92vw] sm:w-[90vw] lg:w-[650px] 2xl:w-[800px] bg-[#212428] rounded-lg p-6 sm:p-10">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
-          <h4 className="text-2xl font-bold">About Me</h4>
+          <h4 className="text-2xl font-bold text-white">About Me</h4>
         </div>
-        <div className="text-lg mt-7 ml-1">
+        <div className="text-lg mt-7 ml-1 text-white">
           I craft high-performance mobile apps, breathing life into ideas with
           Flutter and Kotlin. My passion lies in optimizing code, designing
           intuitive interfaces, and delivering smooth user journeys. From
@@ -29,7 +29,7 @@ export default function About() {
       <div className="h-full w-[92vw] sm:w-[90vw] lg:w-[510px] 2xl:w-[560px] bg-[#212428] rounded-lg p-6 sm:p-10">
         <div className="flex items-center gap-x-3 mb-8 2xl:mb-4">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
-          <h4 className="text-2xl font-bold">My Details</h4>
+          <h4 className="text-2xl font-bold text-white">My Details</h4>
         </div>
         <div className="flex gap-1 2xl:gap-8">
           <div className="flex flex-col w-[130px] gap-3">
