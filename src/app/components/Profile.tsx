@@ -15,13 +15,15 @@ export default function Profile() {
       <div className="h-full flex flex-col justify-center lg:ml-20">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
-          <h4 className="text-2xl font-bold">HELLO, MY NAME IS</h4>
+          <h4 className="text-2xl font-bold text-white">HELLO, MY NAME IS</h4>
         </div>
         <div className="flex gap-x-3">
           <h1 className="text-[13vw] sm:text-[90px] font-extrabold bg-gradient-to-r from-[#FA6006] to-white bg-clip-text text-transparent">
             JOY
           </h1>
-          <h1 className="text-[13vw] sm:text-[90px] font-extrabold">SARKAR</h1>
+          <h1 className="text-[13vw] sm:text-[90px] font-extrabold text-white">
+            SARKAR
+          </h1>
         </div>
         <div className="w-[80vw] sm:w-[500px] block lg:hidden">
           <DotLottiePlayer
@@ -32,11 +34,11 @@ export default function Profile() {
         </div>
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[54px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
-          <h4 className="text-[4vw] sm:text-2xl font-bold">
+          <h4 className="text-[4vw] sm:text-2xl font-bold text-white">
             I AM A SOFTWARE DEVELOPER
           </h4>
         </div>
-        <div className="text-lg mt-4 lg:mt-8 w-full sm:w-[560px] ml-1 px-2">
+        <div className="text-lg mt-4 lg:mt-8 w-full sm:w-[560px] ml-1 px-2 text-white">
           From Kolkata, West Bengal. I have rich exprience in Mobile app
           development, also I am good at Fullstack web development. I love to
           talk with about our unique.
