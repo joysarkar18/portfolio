@@ -32,7 +32,7 @@ const ContactForm = () => {
           placeholder="Name"
           value={formData.name}
           onChange={handleChange}
-          className="bg-[#191C1F] w-[25vw] px-6 rounded-full py-2"
+          className="bg-[#191C1F] w-[40vw] sm:w-[25vw] px-6 rounded-full py-2"
         />
         <input
           type="tel"
@@ -40,7 +40,7 @@ const ContactForm = () => {
           placeholder="Phone"
           value={formData.phone}
           onChange={handleChange}
-          className="bg-[#191C1F] w-[25vw] px-6 rounded-full py-2"
+          className="bg-[#191C1F] w-[40vw] sm:w-[25vw] px-6 rounded-full py-2"
         />
       </div>
       <div>
@@ -50,7 +50,7 @@ const ContactForm = () => {
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
-          className="bg-[#191C1F] w-[54vw] px-6 rounded-full py-2"
+          className="bg-[#191C1F] w-[84vw] sm:w-[54vw] px-6 rounded-full py-2"
         />
       </div>
       <div>
@@ -60,7 +60,7 @@ const ContactForm = () => {
           placeholder="Subject"
           value={formData.subject}
           onChange={handleChange}
-          className="bg-[#191C1F] w-[54vw] px-6 rounded-full py-2"
+          className="bg-[#191C1F] w-[84vw] sm:w-[54vw] px-6 rounded-full py-2"
         />
       </div>
       <div>
@@ -69,7 +69,7 @@ const ContactForm = () => {
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
-          className="bg-[#191C1F] w-[54vw] h-28 px-6 rounded-lg py-2"
+          className="bg-[#191C1F] w-[84vw] sm:w-[54vw] h-28 px-6 rounded-lg py-2"
         />
       </div>
       <button

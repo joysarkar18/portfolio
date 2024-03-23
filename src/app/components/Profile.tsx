@@ -3,8 +3,8 @@ import { MdCloudDownload } from "react-icons/md";
 
 export default function Profile() {
   return (
-    <div className="h-full w-[1200px] 2xl:w-[1400px] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-10">
-      <div className="h-[60vh]">
+    <div className="h-full w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-8 sm:p-10">
+      <div className="h-[60vh] lg:block hidden">
         <DotLottiePlayer
           src="/animations/developer.lottie"
           autoplay
@@ -12,28 +12,37 @@ export default function Profile() {
         ></DotLottiePlayer>
       </div>
 
-      <div className="h-full flex flex-col justify-center ml-20">
+      <div className="h-full flex flex-col justify-center lg:ml-20">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">HELLO, MY NAME IS</h4>
         </div>
         <div className="flex gap-x-3">
-          <h1 className="text-[90px] font-extrabold bg-gradient-to-r from-[#FA6006] to-white bg-clip-text text-transparent">
+          <h1 className="text-[13vw] sm:text-[90px] font-extrabold bg-gradient-to-r from-[#FA6006] to-white bg-clip-text text-transparent">
             JOY
           </h1>
-          <h1 className="text-[90px] font-extrabold">SARKAR</h1>
+          <h1 className="text-[13vw] sm:text-[90px] font-extrabold">SARKAR</h1>
+        </div>
+        <div className="w-[80vw] sm:w-[500px] block lg:hidden">
+          <DotLottiePlayer
+            src="/animations/developer.lottie"
+            autoplay
+            loop
+          ></DotLottiePlayer>
         </div>
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[54px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
-          <h4 className="text-2xl font-bold">I AM A SOFTWARE DEVELOPER</h4>
+          <h4 className="text-[4vw] sm:text-2xl font-bold">
+            I AM A SOFTWARE DEVELOPER
+          </h4>
         </div>
-        <div className="text-lg mt-8 w-[560px] ml-1">
+        <div className="text-lg mt-4 lg:mt-8 w-full sm:w-[560px] ml-1 px-2">
           From Kolkata, West Bengal. I have rich exprience in Mobile app
           development, also I am good at Fullstack web development. I love to
           talk with about our unique.
         </div>
 
-        <div className="flex mt-16 gap-6">
+        <div className="flex ml-2 mt-8 lg:mt-16 gap-6">
           <div className="h-[40px] w-[154px] bg-gradient-to-r cursor-pointer from-[#FA6006] to-[#FFB58A] rounded-full flex justify-center items-center text-black font-medium text-[15px]">
             <MdCloudDownload className="h-30 mr-2"></MdCloudDownload> Download
             CV
