@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import emailjs from "@emailjs/browser";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,8 +18,30 @@ const ContactForm = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    // Handle form submission here
+    emailjs
+      .sendForm(
+        "service_o4fykbp",
+        "template_m0cxxux",
+        e.target,
+        "V2Hg3zbD-zPyJKbX-"
+      )
+      .then(
+        (result: any) => {
+          console.log(result.text);
+        },
+        (error: any) => {
+          console.log(error.text);
+        }
+      );
     console.log(formData);
+    // Optionally, reset form fields after submission
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (

@@ -13,14 +13,34 @@ export default function Home() {
   return (
     <div className="w-full bg-[#080716] flex flex-col justify-center items-center">
       <nav className="h-20 w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex justify-end items-center gap-6">
-        <FaLinkedin className="text-white cursor-pointer hover:text-[#FA6006]"></FaLinkedin>
-        <FaGithub className="text-white cursor-pointer hover:text-[#FA6006]"></FaGithub>
-        <FaSquareXTwitter className="text-white cursor-pointer hover:text-[#FA6006]"></FaSquareXTwitter>
-        <p
-          className={`bg-gradient-to-r cursor-pointer from-[#FA6006] to-white bg-clip-text text-transparent font-semibold`}
+        <a
+          href="https://www.linkedin.com/in/joy-sarkar-667b47218/"
+          target="_blank"
         >
-          Hire Me
-        </p>
+          <FaLinkedin
+            size={26}
+            className="text-white cursor-pointer hover:text-[#FA6006]"
+          ></FaLinkedin>
+        </a>
+        <a href="https://github.com/joysarkar18" target="_blank">
+          <FaGithub
+            size={26}
+            className="text-white cursor-pointer hover:text-[#FA6006]"
+          ></FaGithub>
+        </a>
+        <a href="https://twitter.com/byteberg" target="_blank">
+          <FaSquareXTwitter
+            size={26}
+            className="text-white cursor-pointer hover:text-[#FA6006]"
+          ></FaSquareXTwitter>
+        </a>
+        <a>
+          <p
+            className={`bg-gradient-to-r cursor-pointer from-[#FA6006] to-white bg-clip-text text-transparent font-semibold`}
+          >
+            Hire Me
+          </p>
+        </a>
       </nav>
       <Profile></Profile>
       <About></About>
