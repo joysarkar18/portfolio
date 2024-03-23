@@ -3,8 +3,8 @@ import Skill from "./Skill";
 
 export default function MySkills() {
   return (
-    <div className="w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex justify-between mb-10">
-      <div className="lg:w-[440px] hidden lg:block 2xl:w-[500px] bg-[#212428] rounded-lg py-6 px-6">
+    <div className="w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex sm:flex-row flex-col justify-between mb-10">
+      <div className="h-[92vw] w-[92vw] mb-10 sm:mb-0 lg:w-[440px] block sm:hidden lg:block 2xl:w-[500px] bg-[#212428] rounded-lg p-4 sm:p-6">
         <Spline scene="https://prod.spline.design/jKkr0egSW0vOYf8e/scene.splinecode" />
       </div>
       <div className="w-[92vw] sm:w-[90vw] lg:w-[720px] 2xl:w-[860px] bg-[#212428] rounded-lg p-8 sm:lg:p-8 2xl:p-10">
