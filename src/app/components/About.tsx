@@ -8,8 +8,8 @@ import { LiaSchoolSolid } from "react-icons/lia";
 import { IoCheckmarkCircle } from "react-icons/io5";
 export default function About() {
   return (
-    <div className="flex mb-10 flex-row justify-between w-[1400px]">
-      <div className="w-[800px] bg-[#212428] rounded-lg p-10">
+    <div className="flex mb-10 flex-row justify-between w-[1200px] 2xl:w-[1400px]">
+      <div className="w-[650px] 2xl:w-[800px] bg-[#212428] rounded-lg p-10">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">About Me</h4>
@@ -26,13 +26,13 @@ export default function About() {
           I have one year plus of exprience with Flutter development.
         </div>
       </div>
-      <div className="h-full w-[560px] bg-[#212428] rounded-lg p-10">
-        <div className="flex items-center gap-x-3 mb-4">
+      <div className="h-full w-[510px] 2xl:w-[560px] bg-[#212428] rounded-lg p-10">
+        <div className="flex items-center gap-x-3 mb-8 2xl:mb-4">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold">My Details</h4>
         </div>
-        <div className="flex gap-8">
-          <div className="flex flex-col gap-3">
+        <div className="flex gap-1 2xl:gap-8">
+          <div className="flex flex-col w-[130px] gap-3">
             <div className="flex font-bold items-center gap-2 text-sm text-[#23C7AC]">
               <IoPersonSharp></IoPersonSharp>
               AGE :
