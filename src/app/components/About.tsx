@@ -58,7 +58,7 @@ export default function About() {
               <IoSchoolSharp></IoSchoolSharp>
               DEGREE :
             </div>
-            <div className="mt-5 sm:mt-0 flex font-bold items-center gap-2 text-sm text-[#23C7AC]">
+            <div className="flex font-bold items-center gap-2 text-sm text-[#23C7AC]">
               <FaLocationDot></FaLocationDot>
               LOCATION :
             </div>
@@ -80,8 +80,10 @@ export default function About() {
             <div className="flex font-bold items-center gap-2 text-sm text-white">
               MAKAUT
             </div>
-
-            <div className="flex font-bold items-center gap-2 text-sm text-white">
+            <div className="flex sm:hidden font-bold items-center gap-2 text-sm text-white">
+              B.Tech in CSE
+            </div>
+            <div className="sm:flex hidden  font-bold items-center gap-2 text-sm text-white">
               B.Tech in Computer Science & Engineering
             </div>
             <div className="flex font-bold items-center gap-2 text-sm text-white">
