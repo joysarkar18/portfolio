@@ -1,6 +1,10 @@
+"use client";
+
 import React, { useState } from "react";
 
 import emailjs from "@emailjs/browser";
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +46,17 @@ const ContactForm = () => {
       form_name: "",
       message: "",
     });
+    toast.success("Message sent!", {
+      position: "top-right",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
 
   return (
@@ -49,6 +64,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       className="mt-10 gap-10 flex flex-col items-center"
     >
+      <ToastContainer></ToastContainer>
       <div className="gap-x-[4vw] flex">
         <input
           type="text"
