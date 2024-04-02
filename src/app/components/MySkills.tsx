@@ -4,7 +4,7 @@ import Skill from "./Skill";
 export default function MySkills() {
   return (
     <div className="w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex sm:flex-row flex-col justify-between mb-10">
-      <div className="lg:w-[440px] block sm:w-0 sm-[92vw] sm:mb-0 mb-10 sm:hidden lg:block 2xl:w-[500px] bg-[#212428] rounded-lg py-6 px-6">
+      <div className="lg:w-[440px] block sm:w-0 w-[92vw] h-[92vw] lg:h-auto sm:mb-0 mb-10 sm:hidden lg:block 2xl:w-[500px] bg-[#212428] rounded-lg py-6 px-6">
         <Spline scene="https://prod.spline.design/jKkr0egSW0vOYf8e/scene.splinecode" />
       </div>
       <div className="w-[92vw] sm:w-[90vw] lg:w-[720px] 2xl:w-[860px] bg-[#212428] rounded-lg p-8 sm:lg:p-8 2xl:p-10">

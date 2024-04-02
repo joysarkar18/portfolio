@@ -4,10 +4,10 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    subject: "",
+    user_name: "",
+    contact: "",
+    user_email: "",
+    form_name: "",
     message: "",
   });
 
@@ -36,10 +36,10 @@ const ContactForm = () => {
     console.log(formData);
     // Optionally, reset form fields after submission
     setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      subject: "",
+      user_name: "",
+      contact: "",
+      user_email: "",
+      form_name: "",
       message: "",
     });
   };
@@ -52,17 +52,17 @@ const ContactForm = () => {
       <div className="gap-x-[4vw] flex">
         <input
           type="text"
-          name="name"
+          name="user_name"
           placeholder="Name"
-          value={formData.name}
+          value={formData.user_name}
           onChange={handleChange}
           className="bg-[#191C1F] w-[40vw] sm:w-[25vw] px-6 rounded-full py-2"
         />
         <input
           type="tel"
-          name="phone"
+          name="contact"
           placeholder="Phone"
-          value={formData.phone}
+          value={formData.contact}
           onChange={handleChange}
           className="bg-[#191C1F] w-[40vw] sm:w-[25vw] px-6 rounded-full py-2"
         />
@@ -70,9 +70,9 @@ const ContactForm = () => {
       <div>
         <input
           type="email"
-          name="email"
+          name="user_email"
           placeholder="Email"
-          value={formData.email}
+          value={formData.user_email}
           onChange={handleChange}
           className="bg-[#191C1F] w-[84vw] sm:w-[54vw] px-6 rounded-full py-2"
         />
@@ -80,9 +80,9 @@ const ContactForm = () => {
       <div>
         <input
           type="text"
-          name="subject"
+          name="form_name"
           placeholder="Subject"
-          value={formData.subject}
+          value={formData.form_name}
           onChange={handleChange}
           className="bg-[#191C1F] w-[84vw] sm:w-[54vw] px-6 rounded-full py-2"
         />
