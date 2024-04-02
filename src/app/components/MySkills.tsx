@@ -12,7 +12,7 @@ export default function MySkills() {
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#23C7AC] to-[#a3f1ee] rounded-full"></div>
           <h4 className="text-2xl font-bold text-white">About My Skills</h4>
         </div>
-        <div className="flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2">
+        <div className="flex flex-wrap lg:justify-start justify-center gap-x-5 sm:gap-x-8 gap-y-2">
           <Skill
             height={58}
             width={58}

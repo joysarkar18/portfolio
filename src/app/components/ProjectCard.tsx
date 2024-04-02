@@ -26,13 +26,13 @@ export default function ProjectCard({
   inGithub,
 }: projectsProp) {
   return (
-    <div className="h-[271px] w-[320px] rounded-2xl bg-[#F6EDFF] group">
-      <div className="relative top-[-74px] left-[15px] h-[290px] w-[290px] rounded-2xl bg-[#946dbb] overflow-hidden">
+    <div className="h-[255px] w-[300px] rounded-2xl bg-[#F6EDFF] group">
+      <div className="relative top-[-74px] left-[18px] h-[265px] w-[265px] rounded-2xl bg-[#946dbb] overflow-hidden">
         <Image
           src={img}
           alt=""
-          height={201}
-          width={290}
+          height={191}
+          width={265}
           className="rounded-xl border border-gray-200 transition duration-500 ease-in-out group-hover:filter group-hover:blur-md"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out gap-8">
@@ -65,7 +65,7 @@ export default function ProjectCard({
         </div>
       </div>
       <div className="relative bottom-[68px] px-6">
-        <div className="text-slate-800 text-[13px]">{desc}</div>
+        <div className="text-slate-800 text-[12px]">{desc}</div>
         <div className="text-[#FA6006] font-semibold flex items-center text-[16px]">
           {projectName}
         </div>
