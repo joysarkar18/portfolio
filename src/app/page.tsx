@@ -80,6 +80,17 @@ export default function Home() {
 
         <ContactForm></ContactForm>
       </div>
+      <footer className="w-[100vw] lg:w-[99vw] shadow bg-[#212428]  overflow-hidden">
+        <div className="w-screen p-4 flex md:items-center justify-center">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2024{" "}
+            <a href="" className="hover:underline">
+              Joy Sakar™
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
