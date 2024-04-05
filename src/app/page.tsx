@@ -10,7 +10,6 @@ import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import { SiCodechef } from "react-icons/si";
 import { SiCodeforces } from "react-icons/si";
-import { SiLeetcode } from "react-icons/si";
 
 export default function Home() {
   const handleOpenGmail = () => {
