@@ -53,14 +53,14 @@ export default function Projects() {
         ></ProjectCard>
 
         <ProjectCard
-          desc="Official website for coding club MAKAUT."
-          img="/images/hackaut.png"
-          projectName="Hackaut official website"
-          inPlayStore={false}
-          link="https://hackaut.netlify.app/"
-          playStoreLink=""
-          source="https://github.com/joysarkar18/Hackaut-web"
-          inGithub={true}
+          desc="Exclusive app for drivers seeking passenger"
+          img="/images/CabsWale.png"
+          projectName="CabsWale App"
+          inPlayStore={true}
+          link="https://cabswale.in/"
+          playStoreLink="https://play.google.com/store/apps/details?id=com.app.cabswalle&pli=1"
+          source=""
+          inGithub={false}
         ></ProjectCard>
         <ProjectCard
           desc="Just a hobby app for tracking my expenses"
