@@ -1,11 +1,16 @@
 import Spline from "@splinetool/react-spline";
 import Skill from "./Skill";
+import { Suspense } from "react";
 
 export default function MySkills() {
   return (
     <div className="w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex sm:flex-row flex-col justify-between mb-10">
       <div className="lg:w-[440px] block sm:w-0 w-[92vw] h-[92vw] lg:h-auto sm:mb-0 mb-10 sm:hidden lg:block 2xl:w-[500px] bg-[#212428] rounded-lg py-6 px-6">
-        <Spline scene="animations/scene.splinecode" />
+        <Suspense
+          fallback={<span className="text-white text-center">Loading...</span>}
+        >
+          <Spline scene="animations/scene.splinecode" />
+        </Suspense>
       </div>
       <div className="w-[92vw] sm:w-[90vw] lg:w-[720px] 2xl:w-[860px] bg-[#212428] rounded-lg p-8 sm:lg:p-8 2xl:p-10">
         <div className="flex items-center gap-x-3 mb-1">
