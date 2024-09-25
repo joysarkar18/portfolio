@@ -46,7 +46,7 @@ export default function Profile() {
 
         <div className="flex ml-2 mt-8 lg:mt-16 gap-6">
           <a
-            href="https://firebasestorage.googleapis.com/v0/b/gamaru-mobile-app.appspot.com/o/joy_resume.pdf?alt=media&token=8a2873f8-a596-4bc6-bea1-94c102dec303"
+            href="https://drive.google.com/file/d/1fGy26da7rkoz6V7aYjKrDAZzSJgKU8Vu/view?usp=sharing"
             target="_blank"
           >
             <div className="h-[40px] w-[154px] bg-gradient-to-r cursor-pointer from-[#FA6006] to-[#FFB58A] rounded-full flex justify-center items-center text-black font-medium text-[15px]">

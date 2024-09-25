@@ -9,6 +9,16 @@ export default function Projects() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 lg:gap-x-16 2xl:gap-x-20 gap-y-28 mt-28">
+      <ProjectCard
+          desc="Exclusive app for drivers seeking passenger"
+          img="/images/CabsWale.png"
+          projectName="CabsWale App"
+          inPlayStore={true}
+          link="https://cabswale.in/"
+          playStoreLink="https://play.google.com/store/apps/details?id=com.app.cabswalle&pli=1"
+          source=""
+          inGithub={false}
+        ></ProjectCard>
         <ProjectCard
           desc={`India's first racing fantasy game.`}
           img="/images/podiumpe.png"
@@ -52,16 +62,6 @@ export default function Projects() {
           inGithub={true}
         ></ProjectCard>
 
-        <ProjectCard
-          desc="Exclusive app for drivers seeking passenger"
-          img="/images/CabsWale.png"
-          projectName="CabsWale App"
-          inPlayStore={true}
-          link="https://cabswale.in/"
-          playStoreLink="https://play.google.com/store/apps/details?id=com.app.cabswalle&pli=1"
-          source=""
-          inGithub={false}
-        ></ProjectCard>
         <ProjectCard
           desc="Just a hobby app for tracking my expenses"
           img="/images/transacton.png"
