@@ -5,32 +5,24 @@ export default function Profile() {
   return (
     <div className="h-full w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-8 sm:p-10">
       <div className="h-[60vh] lg:block hidden">
-        <DotLottiePlayer
-          src="/animations/developer.lottie"
-          autoplay
-          loop
-        ></DotLottiePlayer>
+  <img className="lg:mt-20 xl:mt-0 rounded-lg" src="/images/joy_bg.png" alt="" />
       </div>
 
       <div className="h-full flex flex-col justify-center lg:ml-20">
-        <div className="flex items-center gap-x-3 ml-2">
+        <div className="ml-3 xs:ml-0 flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold text-white">HELLO, MY NAME IS</h4>
         </div>
         <div className="flex gap-x-3">
-          <h1 className="text-[13vw] sm:text-[90px] font-extrabold bg-gradient-to-r from-[#FA6006] to-white bg-clip-text text-transparent">
+          <h1 className="ml-3 xs:ml-0 text-[13vw] sm:text-[90px] font-extrabold bg-gradient-to-r from-[#FA6006] to-white bg-clip-text text-transparent">
             JOY
           </h1>
           <h1 className="text-[13vw] sm:text-[90px] font-extrabold text-white">
             SARKAR
           </h1>
         </div>
-        <div className="w-[80vw] sm:w-[500px] block lg:hidden">
-          <DotLottiePlayer
-            src="/animations/developer.lottie"
-            autoplay
-            loop
-          ></DotLottiePlayer>
+        <div className="mb-6 w-[92vw] sm:w-[500px] block lg:hidden">
+        <img  src="/images/joy_bg.png" alt="" />
         </div>
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[54px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
