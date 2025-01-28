@@ -8,22 +8,17 @@ import { LiaSchoolSolid } from "react-icons/lia";
 import { IoCheckmarkCircle } from "react-icons/io5";
 export default function About() {
   return (
-    <div className="flex mb-10 flex-col gap-y-10 lg:gap-y-0 lg:flex-row items-center lg:justify-between w-[90vw] lg:w-[1200px] 2xl:w-[1400px]">
+    <div className="z-10 flex mb-10 flex-col gap-y-10 lg:gap-y-0 lg:flex-row items-center lg:justify-between w-[90vw] lg:w-[1200px] 2xl:w-[1400px]">
       <div className="w-[92vw] sm:w-[90vw] lg:w-[650px] 2xl:w-[800px] bg-[#212428] rounded-lg p-6 sm:p-10">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold text-white">About Me</h4>
         </div>
-        <div className="text-lg mt-7 ml-1 text-white">
-          I craft high-performance mobile apps, breathing life into ideas with
-          Flutter and Kotlin. My passion lies in optimizing code, designing
-          intuitive interfaces, and delivering smooth user journeys. From
-          concept to launch,I translate vision into reality, making mobile
-          devices come alive. Currently started to explore the world of web
-          development.
+        <div className="text-md mt-7 ml-1 text-white">
+        Flutter |Android Developer, I’m the person who turns your app ideas into reality. I craft high-performance, smooth, and intuitive mobile apps that make your phone feel like magic. Whether it’s optimizing code for peak performance or designing interfaces that just work, I’m all about creating experiences that users love. Let’s build something awesome together—because who doesn’t want an app that feels like it was made by wizards?
         </div>
         <div className="text-lg mt-4 ml-1 font-semibold text-[#23C7AC]">
-          I have one year plus of exprience with Flutter development.
+          I have two years+ of exprience with Android & Flutter development.
         </div>
       </div>
       <div className="h-full w-[92vw] sm:w-[90vw] lg:w-[510px] 2xl:w-[560px] bg-[#212428] rounded-lg p-6 sm:p-10">
