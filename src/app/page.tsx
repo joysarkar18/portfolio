@@ -9,8 +9,7 @@ import MySkills from "./components/MySkills";
 import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import { SiCodechef, SiCodeforces } from "react-icons/si";
-import Spline from '@splinetool/react-spline';
-import { useEffect, useRef } from 'react';
+import {  useRef } from 'react';
 
 export default function Home() {
   const splineRef = useRef<any>(null); // Use `any` for Spline ref as its type is not explicitly defined
@@ -27,32 +26,12 @@ export default function Home() {
     window.open(mailtoLink);
   };
 
-  useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      if (splineRef.current) {
-        const { clientX, clientY } = event;
-        // Update Spline object position to follow the cursor
-        splineRef.current.setAttribute('position', `${clientX} ${clientY} 0`);
-      }
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+ 
 
   return (
     <div className="w-full bg-[#080716] flex flex-col justify-center items-center relative overflow-hidden">
       {/* Spline Animation */}
-      <div className="absolute inset-0 pointer-events-none z-0"> {/* Set z-index to 0 to ensure it stays below all sections */}
-        <Spline
-          ref={splineRef}
-          scene="https://prod.spline.design/sTEu8h5RBsKYYVO6/scene.splinecode" // Replace with your Spline scene URL
-          className="w-full h-full"
-        />
-      </div>
+     
 
       {/* Navbar and Sections */}
       <nav className="h-20 w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex justify-end items-center gap-6 relative z-10">
