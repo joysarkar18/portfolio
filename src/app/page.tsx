@@ -34,7 +34,7 @@ export default function Home() {
      
 
       {/* Navbar and Sections */}
-      <nav className="h-20 w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex justify-end items-center gap-6 relative z-10">
+      <nav className="h-20 w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1200px] flex justify-end items-center gap-6 relative z-10">
         <a
           href="https://www.linkedin.com/in/joy-sarkar-667b47218/"
           target="_blank"
@@ -81,7 +81,7 @@ export default function Home() {
       <About />
       <MySkills />
       <Projects />
-      <div className="h-full w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] bg-[#212428] rounded-lg mb-20 flex flex-col justify-start items-center p-10 relative z-10">
+      <div className="h-full w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1200px] bg-[#212428] rounded-lg mb-20 flex flex-col justify-start items-center p-10 relative z-10">
         <div className="flex items-center gap-x-3 ml-2">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#FA6006] to-[#FFB58A] rounded-full"></div>
           <h4 className="text-2xl font-bold text-white">Contact with Me</h4>

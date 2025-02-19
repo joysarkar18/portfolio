@@ -4,11 +4,11 @@ import { Suspense } from "react";
 
 export default function MySkills() {
   return (
-    <div className="z-10 w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] flex sm:flex-row flex-col justify-between mb-10">
-      <div className="lg:w-[440px] block sm:w-0 w-[92vw] h-[92vw] lg:h-auto sm:mb-0 mb-10 sm:hidden lg:block 2xl:w-[500px] bg-[#212428] rounded-lg py-6 px-6">
+    <div className="z-10 w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1200px] flex sm:flex-row flex-col justify-between mb-10">
+      <div className="lg:w-[410px] block sm:w-0 w-[92vw] h-[92vw] lg:h-auto sm:mb-0 mb-10 sm:hidden lg:block 2xl:w-[400px] bg-[#212428] rounded-lg py-6 px-6">
         <Spline scene="https://prod.spline.design/8fm28dvTSnvXtr7w/scene.splinecode" />
       </div>
-      <div className="w-[92vw] sm:w-[90vw] lg:w-[720px] 2xl:w-[860px] bg-[#212428] rounded-lg p-8 sm:lg:p-8 2xl:p-10">
+      <div className="w-[92vw] sm:w-[90vw] lg:w-[720px] 2xl:w-[780px] bg-[#212428] rounded-lg p-8 sm:lg:p-8 2xl:p-10">
         <div className="flex items-center gap-x-3 mb-1">
           <div className="h-[17px] w-[34px] bg-gradient-to-r from-[#23C7AC] to-[#a3f1ee] rounded-full"></div>
           <h4 className="text-2xl font-bold text-white">About My Skills</h4>

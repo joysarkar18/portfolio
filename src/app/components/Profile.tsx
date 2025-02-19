@@ -3,7 +3,7 @@ import { MdCloudDownload } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 export default function Profile() {
   return (
-    <div className="z-10 h-full w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1400px] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-8 sm:p-10">
+    <div className="z-10 h-full w-[92vw] sm:w-[90vw] lg:w-[1200px] 2xl:w-[1200px] bg-[#212428] rounded-lg mb-10 flex justify-center items-center p-8 sm:p-10">
       <div className="h-[60vh] lg:block hidden">
   <img className="lg:mt-20 xl:mt-0 rounded-lg" src="/images/joy_bg.png" alt="" />
       </div>
