@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-##My personal portfolio
-## Getting Started
+# joy-portfolio
 
-First, run the development server:
+Personal site for Joy Sarkar — Senior Flutter Developer. Single-page, dark,
+with a three.js hero (a phone whose screen is a live-painted canvas texture,
+orbited by tech chips) and scroll-reveal sections.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+- Vite + React 19 + TypeScript
+- Tailwind CSS v4 (`@theme` tokens in `src/index.css`)
+- three.js via `@react-three/fiber` + `@react-three/drei` (hero only, lazy-loaded)
+- `framer-motion` for reveals, `lenis` for smooth scrolling
+
+## Run
+
+```sh
+npm install
+npm run dev        # http://localhost:5173
+npm run build      # outputs dist/
+npm run preview    # serves dist/ at http://localhost:4173
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where things live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| What                                  | File                                        |
+| ------------------------------------- | ------------------------------------------- |
+| All copy, links, numbers, projects    | `src/data.ts`                               |
+| Colours, fonts, animations            | `src/index.css` (`@theme` block)            |
+| 3D phone, chips, parallax             | `src/three/PhoneScene.tsx`                  |
+| The fake app screens on the phone     | `src/three/screenPainter.ts`                |
+| Sections                              | `src/components/*.tsx`                      |
+| Resume PDF (linked from nav + hero)   | `public/resume.pdf`                         |
+| App icons shown in project cards      | `public/icons/`                             |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To update the resume, replace `public/resume.pdf`. To add a project, append to
+`projects` in `src/data.ts` (drop an icon in `public/icons/` or leave `icon`
+unset to get a gradient tile).
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`netlify.toml` is included: connect the repo on Netlify and it builds with
+`npm run build` and publishes `dist/`. Any static host works the same way.
